@@ -1,6 +1,9 @@
 class Bot < RTanque::Bot::Brain
   # RTanque::Bot::Sensors =
-  #  Struct.new(:ticks, :health, :speed, :position, :heading, :radar, :turret)
+  #  Struct.new(
+  #    :ticks, :health, :speed, 
+  #    :position, :heading, :radar, :turret
+  #  )
   def tick!
     sensors.ticks # Integer
     sensors.health # Integer

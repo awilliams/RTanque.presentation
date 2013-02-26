@@ -143,7 +143,8 @@ Termination.new do |presentation|
         %q(* Abierto a tod@s),
         %q(* Cuando tengamos 5+),
         %q(* Pull-requests welcome),
-        %q(* No hacks (ie ObjectSpace))
+        %q(* No hacks (ie ObjectSpace)),
+        %q(* Configuración y detalles por definir)
       ]
     }
 
@@ -163,6 +164,6 @@ Termination.new do |presentation|
   }
 
   presentation.slide.script {
-    'rtanque start sample_bots/keyboard sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy --width=800 --height=600'
+    'rtanque start sample_bots/keyboard sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy --width=790 --height=590'
   }
 end.start
