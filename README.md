@@ -10,5 +10,5 @@ Run the slideshow
     ./download_twitter_pics.rb
     ./slideshow.rb
 
-* Note: Close twitter profile pic examples with Left Arrow + Right Arrow
+*Note: Close twitter profile pic examples with Left Arrow + Right Arrow*
     
