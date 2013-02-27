@@ -1,9 +1,4 @@
 class Bot < RTanque::Bot::Brain
-  # RTanque::Bot::Command =
-  #  Struct.new(
-  #    :speed, :heading, :radar_heading, 
-  #    :turret_heading, :fire_power
-  #  )
   def tick!
     command.speed = 1
     command.heading = Math::PI

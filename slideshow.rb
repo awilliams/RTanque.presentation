@@ -51,11 +51,11 @@ Termination.new do |presentation|
   end
 
   gosu_subtitle = "\"Gosu is a 2D game development library\nfor the Ruby and C++ programming languages\"\n-http://www.libgosu.org/"
-  presentation.section('Gosu', gosu_subtitle) do |gosu|
+  presentation.section('Gosu (Linux, Mac, Windows)', gosu_subtitle) do |gosu|
     gosu.slide(TOP_MARGIN).video {
       %q(media/gosu_examples.mpeg) }
     .text {
-      %q(Call of Duty 5 no son)
+      %q(No son Call of Duty 5)
     }
 
     gosu.slide(TOP_MARGIN).text {
@@ -119,6 +119,8 @@ Termination.new do |presentation|
     gosu.slide.code { File.open('examples/twitter_5_extract.rb') }
     gosu.slide(TOP_MARGIN).script(false) { %q(ruby examples/twitter_5.rb) }.text { |color|
       "#{color.underline{'Facíl'}}, exportable, y tiene varios usos"
+    }.br.text {
+      "... como versión de Robocode"
     }
   end
 
@@ -142,18 +144,20 @@ Termination.new do |presentation|
     }.code {
       File.open(%q(examples/bot_sensors.rb))
     }
-
     rtanque.slide.code { File.open(%q(examples/bot_command.rb)) }
 
     rtanque.slide(TOP_MARGIN).text { %q(RTanque Competición) }.br.text(:center_all) {
       [
         %q(* Abierto a tod@s),
+        %q(* Registar con un gist secreto),
         %q(* Cuando tengamos 5+),
-        %q(* No gemas externas, solo std-lib),
-        %q(* Pull-requests welcome),
+        %q(* Ruby 1.9.3 o 2.0.0),
+        %q(* No gemas externas, solo stdlib),
         %q(* No hacks (ie ObjectSpace)),
+        %q(* Pull-requests welcome),
         %q(* API está ~fijo),
-        %q(* Configuración y detalles por definir)
+        %q(* Configuración y detalles por definir),
+        %q(* Melee Battle)
       ]
     }
 
