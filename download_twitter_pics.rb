@@ -3,8 +3,7 @@
 require 'net/http'
 require 'json'
 
-SCREEN_NAMES = %w(
-@otikik
+SCREEN_NAMES = %w(@otikik
 @amaiac
 @mcberros
 @eamodeorubio
@@ -34,7 +33,10 @@ SCREEN_NAMES = %w(
 @alvarosanmartin
 @afcapel
 @wchiquito
-@darkrodry)
+@darkrodry
+@RaulFlint
+@algohace
+@samlown)
 
 Dir.mkdir('twitter_images') unless Dir.exists?('twitter_images')
 SCREEN_NAMES.each do |screen_name|

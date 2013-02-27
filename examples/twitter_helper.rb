@@ -1,6 +1,6 @@
 module TwitterHelper
-  WIDTH  = 800
-  HEIGHT = 600
+  WIDTH  = 790 
+  HEIGHT = 500
 
   def update
     self.close if self.button_down?(Gosu::KbRight) && self.button_down?(Gosu::KbLeft)

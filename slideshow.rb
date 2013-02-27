@@ -144,13 +144,14 @@ Termination.new do |presentation|
         %q(* Cuando tengamos 5+),
         %q(* Pull-requests welcome),
         %q(* No hacks (ie ObjectSpace)),
-        %q(* Configuración y detalles por definir)
+        %q(* Configuración y detalles por definir),
+        %q(* API está ~fijo)
       ]
     }
 
     rtanque.slide.text(:left) {
       '$ bundle exec rtanque init my_bot'
-    }.code{
+    }.br.code{
       File.open('examples/my_bot.rb')
     }
 
