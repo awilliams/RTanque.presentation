@@ -1,42 +1,37 @@
 # Videojuegos 2D con Ruby + Competición
 Adam Williams | @acw5
 
-## Outline
-1. Personal Intro
-2. Outline
-    1. Desarrollo de juegos con Ruby 
-    2. Presentación de RTanque
-* Historia Personal
-3. Desarrollo con Ruby
-    1. "Ví robobattle (java) y me gustó. Quería ver si sería posible hacer un juego parecido en Ruby"
-    2. "Ruby is *not* at all suitable for game development!"
-      * No esta enfocado (Ruby) en el performance. Garbage Collection
-    3. Gosu
-      * Ejemplos (con videos)
-      * Pensaba que iba ser dificil, pero no es. Tampoco es solomente para juegos, puede ser para apps visuales
-    4.    Walkthrough de la creación de un juego básico
-      1. Gusu library (Window, Image, Font)
-      2. Tick bucle
-      3. Twitter ejemplos
-4. RTanque
-    1. Vi Robobattle (java), me gustó, queria hacerlo un Ruby, existia una version pero mala. Hice mi propia versión. 
-       slides: Photo of Robobattle, versión mala código, mi version RTanque
-    2. Competición voluntaria.. premio?? ranking en el codigo, o en la pagina
-       slides: voluntaria, ranking/premio
-    3. Comando para crear tu bot
-       slides: comando, resultado del comando
-    4. Descripcion del API
-       slides: Sensors.*, Command.* 
-    5. Como participar en la competicion
-       slides: Formulario, github page
-    6. Preguntas mientra que ionatan juega
+* Personal Intro
 
+* Outline
+    1. Basicos para empezar
+    2. Competicion para seguir
 
-Notes: 
- * Put all videos together into one file, have in local
- 800x600
- * reduce class size
- * only show source of ej 1-2. Rest just output
- * Competition 
- * make twitter in form optional
- * screen capture
+* Como empecé:
+    1. RoboCode
+    2. RoboCode version for Ruby
+
+* Investigar como hacer un video juego con Ruby en internet
+    1. No es posibile/buena idea
+    2. Realmente va un poco un contra del meta de Ruby. Ser rapido para nosotros, no el ordenador
+    3. Entonces... es posible y existen varias librarias para hacerlo
+
+* GOSU
+    1. Ejemplos (video)
+    2. Encuesta: ¿Cuantos habeis hecho algo con graficos?
+    3. Yo nada. Pensaba que era dificil/complicado
+    4. Doom3 foto + code sample
+    5. Realmente es facil. Las 9 clases de Gosu
+    6. Ejemplos + código...
+    7. Con eso, ya pude hacer RoboCode en Ruby
+
+* RTanque
+    1. Idea es vieja
+    2. Ejemplo de Robocode
+    3. Había version en Ruby. No me gustó
+    4. En que consiste un tanque
+    5. API Sensors
+    6. API Command
+    7. Competición
+    8. Comando para crear bot
+    9. Como subir un bot

@@ -16,10 +16,12 @@ Termination.new do |presentation|
       %q(II. Competición para seguir)
     }
 
-    intro.slide(TOP_MARGIN).image{ %q(media/crazyRobocode.png) }.text { |color|
-      color.bold { %q(Robocode de IBM) }
-    }.br(6).text {
-      %q(Hacerlo con Ruby)
+    intro.slide(TOP_MARGIN).text { |color|
+      color.bold { %q(Robocode) }
+    }
+
+    intro.slide(TOP_MARGIN).image{ %q(media/crazyRobocode.png) }.text {
+      %q(Robocode.to_ruby)
     }
   end
 
@@ -27,21 +29,24 @@ Termination.new do |presentation|
     ruby_dev.slide(TOP_MARGIN).text { |color|
       color.bold { "\"Ruby is *not*\nat all suitable for game development!\"" }
     }.br.text {
-      '- the internet'
+      '- internet'
     }
 
     ruby_dev.slide(TOP_MARGIN).image{
       %q('media/ruby_homepage.png')
     }.text {
-      "'Ruby features a true mark-and-sweep garbage collector\nfor all Ruby objects. No need to\nmaintain reference counts in extension libraries.\nAs Matz says,\n“This is better for your health.”'"
-    }.br.text {
-      %q(- http://www.ruby-lang.org/en/about/)
-    }
-
-    ruby_dev.slide(TOP_MARGIN).text {
-      %q(Ruby es lento)
+      "Ruby es lento para el ordenador,\npero rápido para nosotros"
     }.br(5).text {
       %q(¿Entonces?)
+    }
+
+    ruby_dev.slide(TOP_MARGIN).text(:center_all) {
+      [
+        '* ruby-opengl',
+        '* G3DRuby',
+        '* Rubygame',
+        '* Ruby/SDL'
+      ]
     }
   end
 
@@ -120,18 +125,20 @@ Termination.new do |presentation|
   presentation.section('RTanque', 'A game for Ruby programmers') do |rtanque|
     rtanque.slide(TOP_MARGIN).image {
       %q(media/robotwar.png)
-    }.text { %q(Robocode) }
+    }.text {
+      ['Robotwar. 1970', 'Robocode de IBM. 2001']
+    }
 
     rtanque.slide(TOP_MARGIN).video { %q(media/robocode.mpeg) }.text {
-      %q(Versión en Ruby)
+      %q(Versiones en Ruby)
     }
 
     rtanque.slide(TOP_MARGIN).image { %q(media/RRobots-Home.png) }.text {
-      'Viejo, No muy OO, ...'
+      'Viejo, No muy OO, no se aprende, ...'
     }
 
     rtanque.slide.image {
-      'media/robocode_tank.gif'
+      'media/challenge_accepted.jpg media/robocode_tank.gif'
     }.code {
       File.open(%q(examples/bot_sensors.rb))
     }
@@ -142,10 +149,11 @@ Termination.new do |presentation|
       [
         %q(* Abierto a tod@s),
         %q(* Cuando tengamos 5+),
+        %q(* No gemas externas, solo std-lib),
         %q(* Pull-requests welcome),
         %q(* No hacks (ie ObjectSpace)),
-        %q(* Configuración y detalles por definir),
-        %q(* API está ~fijo)
+        %q(* API está ~fijo),
+        %q(* Configuración y detalles por definir)
       ]
     }
 
@@ -155,7 +163,9 @@ Termination.new do |presentation|
       File.open('examples/my_bot.rb')
     }
 
-    rtanque.slide(TOP_MARGIN).text { |color|
+    rtanque.slide(TOP_MARGIN).image {
+      %q(media/RTanque_home_1.png media/RTanque_home_2.png)
+    }.text { |color|
       color.bold { 'http://awilliams.github.com/RTanque/' }
     }
   end
@@ -165,6 +175,6 @@ Termination.new do |presentation|
   }
 
   presentation.slide.script {
-    'rtanque start sample_bots/keyboard sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy --width=790 --height=590'
+    'rtanque start sample_bots/keyboard sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy --width=790 --height=500'
   }
 end.start

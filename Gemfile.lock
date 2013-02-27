@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/awilliams/RTanque.git
-  revision: a7a4ecdad2d2e716a3d28e5fefab4b66a27e6191
+  revision: e83afb07f4b9912e18f38f8ca807251aca711d50
   specs:
     rtanque (0.0.1)
       configuration
