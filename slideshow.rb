@@ -124,41 +124,16 @@ Termination.new do |presentation|
     }
   end
 
-  presentation.section('RTanque', 'A game for Ruby programmers') do |rtanque|
+  presentation.section('RTanque', "A game for Ruby programmers\ngithub.com/awilliams/RTanque") do |rtanque|
+
     rtanque.slide(TOP_MARGIN).image {
-      %q(media/robotwar.png)
+      'media/tank.png'
     }.text {
-      ['Robotwar. 1970', 'Robocode de IBM. 2001']
+      "Bot, Turret, Radar"
     }
 
     rtanque.slide(TOP_MARGIN).video { %q(media/robocode.mpeg) }.text {
-      %q(Versiones en Ruby)
-    }
-
-    rtanque.slide(TOP_MARGIN).image { %q(media/RRobots-Home.png) }.text {
-      'Viejo, No muy OO, no se aprende, ...'
-    }
-
-    rtanque.slide.image {
-      'media/challenge_accepted.jpg media/robocode_tank.gif'
-    }.code {
-      File.open(%q(examples/bot_sensors.rb))
-    }
-    rtanque.slide.code { File.open(%q(examples/bot_command.rb)) }
-
-    rtanque.slide(TOP_MARGIN).text { %q(RTanque Competición) }.br.text(:center_all) {
-      [
-        %q(* Abierto a tod@s),
-        %q(* Registar con un gist secreto),
-        %q(* Cuando tengamos 5+),
-        %q(* Ruby 1.9.3 o 2.0.0),
-        %q(* No gemas externas, solo stdlib),
-        %q(* No hacks (ie ObjectSpace)),
-        %q(* Pull-requests welcome),
-        %q(* API está ~fijo),
-        %q(* Configuración y detalles por definir),
-        %q(* Melee Battle)
-      ]
+      %q(Cada bot es igual salvo su AI)
     }
 
     rtanque.slide.text(:left) {
@@ -167,16 +142,37 @@ Termination.new do |presentation|
       File.open('examples/my_bot.rb')
     }
 
+    rtanque.slide.code {
+      File.open(%q(examples/bot_sensors.rb))
+    }
+    rtanque.slide.code {
+      File.open(%q(examples/bot_command.rb))
+    }
+
+    rtanque.slide(TOP_MARGIN).text { %q(RTanque Competición) }.text{ 'http://awilliams.github.com/RTanque/' }.br.text(:center_all) {
+      [
+        %q(* Abierto a tod@s),
+        %q(* Registar con un gist secreto),
+        %q(* Cuando tengamos 5+),
+        %q(* Ruby 1.9.3 (2.0.0?)),
+        %q(* No gemas externas, solo stdlib),
+        %q(* No hacks (ie ObjectSpace)),
+        %q(* Pull-requests welcome),
+        %q(* API está ~fijo),
+        %q(* Configuración y detalles por definir),
+        %q(* Hay un bot de teclado sample_bots/keyboard),
+        %q(* Melee Battle)
+      ]
+    }
+
     rtanque.slide(TOP_MARGIN).image {
-      %q(media/RTanque_home_1.png media/RTanque_home_2.png)
+      %q(media/Rtanque_home_1.png media/Rtanque_home_2.png)
     }.text { |color|
+      color.bold { FONT.asciify("Preguntas") }
+    }.br.hr.br.text { |color|
       color.bold { 'http://awilliams.github.com/RTanque/' }
     }
   end
-
-  presentation.slide(TOP_MARGIN) { |slide|
-    slide.text { |color| color.bold { FONT.asciify("Preguntas") } }
-  }
 
   presentation.slide.script {
     'rtanque start sample_bots/keyboard sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy --width=790 --height=500'
