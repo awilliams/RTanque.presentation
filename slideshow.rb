@@ -175,6 +175,6 @@ Termination.new do |presentation|
   end
 
   presentation.slide.script {
-    'rtanque start sample_bots/keyboard sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy sample_bots/seek_and_destroy --width=790 --height=500'
+    'rtanque start sample_bots/keyboard sample_bots/seek_and_destroy sample_bots/seek_and_destroy --width=800 --height=515'
   }
 end.start
