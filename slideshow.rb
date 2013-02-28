@@ -118,9 +118,9 @@ Termination.new do |presentation|
 
     gosu.slide.code { File.open('examples/twitter_5_extract.rb') }
     gosu.slide(TOP_MARGIN).script(false) { %q(ruby examples/twitter_5.rb) }.text { |color|
-      "#{color.underline{'Facíl'}}, exportable, y tiene varios usos"
+      "#{color.underline{'Facíl'}} y tiene varios usos"
     }.br.text {
-      "... como versión de Robocode"
+      "... como una versión de Robocode"
     }
   end
 
