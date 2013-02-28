@@ -161,7 +161,8 @@ Termination.new do |presentation|
         %q(* API está ~fijo),
         %q(* Configuración y detalles por definir),
         %q(* Hay un bot de teclado sample_bots/keyboard),
-        %q(* Melee Battle)
+        %q(* Melee Battle),
+        %q(* ¿Premios?)
       ]
     }
 
